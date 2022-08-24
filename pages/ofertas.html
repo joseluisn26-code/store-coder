@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/font/Roboto-Regular.ttf" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">    
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shop Jose Luis</title>
+</head>
+<body>
+    <div class="grid-container">
+    <!-- header del site -->
+    <header id="header" class="header">
+        <!-- Menu de navegación principal y logo -->
+        <div class="header__logo">
+            <a href="../index.html"><i class="fas fa-shopping-cart"></i></a>
+            <h3>Jose Luis Shop</h3>
+        </div>
+
+        <nav  class="header__menu">
+            <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra de busqueda y icono -->
+        <div class="header__search_bar">
+            <input type="search" />
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="header__icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <!-- contenido de la pagina -->
+    <main class="main">
+    <section>
+        <h1>Ofertas</h1>
+    </section>
+    <!-- barra de navegacion- miga de pan -->
+    <section>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#ofertasDia">Ofertas Día</a>
+            </li>
+            <li>
+                <a href="#ofertasSemana">Ofertas para la semana</a>
+            </li>
+            <li>
+                <a href="#ofertasMes">Ofertas durante todo el mes</a>
+            </li>
+        </ul>
+    </section>
+    <!-- seccion de busqueda por categoria -->
+    <section id="ofertasDia">
+        <div class="select-container">
+            <select name="categoria" id="categoria">
+                <option value="" selected disabled hidden>Categoria</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="animales">Animales</option>
+                <option value="deportes">Deportes</option>
+                <option value="juegos">Juegos</option>
+                <option value="libros">Libros</option>
+                <option value="electrodomesticos">Electrodomesticos</option>
+                <option value="ropa">Ropa</option>
+                <option value="hogar">Hogar</option>
+                <option value="salud">Salud</option>
+                <option value="relojes">Relojes</option>
+                <option value="construccion">Construccion</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+            <select name="marca" id="marca">
+                <option value="" selected disabled hidden>Marca</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <select name="precio" id="precio">
+                    <option value="" selected disabled hidden>Precio</option>
+                    <option value="0">Más de $300.000</option>
+                    <option value="1">$100.000 a $50.000</option>
+                    <option value="2">Hasta $100.000</option>
+                </select>
+                <select name="envio" id="envio">
+                    <option value="" selected disabled hidden>Envio</option>
+                    <option value="0">Con costo de envio</option>
+                    <option value="1">Gratis</option>   
+                </select>
+                <select name="calificacion" id="calificacion">
+                    <option value="" selected disabled hidden>calificación</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="productos-container">
+                <div class="productos-descripcion">
+                    <h2>Ofertas del día</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        pariatur sed dolorem omnis doloribus porro, quod ut labore quidem
+                        minus ex, facilis nemo fuga ipsa dolor libero architecto quaerat
+                        suscipit te gano 20/0 en fifa ?
+                        
+                    </p>
+                </div>
+                <article class="productos-item">
+                    <img src="../assets/img/producto 3.jpg" alt="Producto tres" />
+                </article>
+                <article class="productos-item">
+                    <img src="../assets/img/producto 6.jpg" alt="Producto seis" />
+                </article>
+                <article class="productos-item">
+                    <img src="../assets/img/producto 1.jpg" alt="Producto uno" />
+                </article>
+            </div>
+        </section>
+        
+        <!-- Ofertas para la semana -->
+        <section id="ofertasSemana">
+            <div class="productos-container-right">
+                <article class="productos-item-right">
+                    <h2  class="right">Ofertas para la semana</h2> 
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        pariatur sed dolorem omnis doloribus porro, quod ut labore quidem
+                        minus ex, facilis nemo fuga ipsa dolor libero architecto quaerat
+                        suscipit jos el sexy gana 40/0?
+                    </p>
+                </article>
+                <article class="productos-item-right">
+                    <img src="../assets/img/producto 1.jpg" alt="Producto uno" />
+                </article>
+                <article class="productos-item-right">
+                    <img src="../assets/img/producto 2.jpg" alt="Producto dos" />
+                </article>
+                <article class="productos-item-right">
+                    <img src="../assets/img/producto 3.jpg" alt="Producto tres" />
+                </article>
+            </div>
+        </section>
+
+    <!-- Ofertas durante todo el mes -->
+    <section id="ofertasMes">
+        <div class="productos-container">
+            <div class="productos-descripcion">
+                <h2>Ofertas durante todo el mes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                pariatur sed dolorem omnis doloribus porro, quod ut labore quidem
+                minus ex, facilis nemo fuga ipsa dolor libero architecto quaerat suscipit soy pro en fornite ?
+                </p>
+            </div>
+            <article class="productos-item">
+                <img src="../assets/img/producto 1.jpg" alt="Producto uno" />
+            </article>
+            <article class="productos-item">
+                <img src="../assets/img/producto 2.jpg" alt="Producto dos" />
+            </article>
+            <article class="productos-item">
+                <img src="../assets/img/producto 3.jpg" alt="Producto tres" />        
+            </article>
+        </div>
+        <div class="productos-range">
+            <input type="range" min="0" max="100" value="90" step="10">
+        </div>
+    </section>
+</main>
+    
+     <!-- footer del site -->
+  <footer id="footer" class="footer">
+    <div class="footerHome__icon">
+        <h5>Copyright © Jose Luis Novoa Nieto</h5>
+        <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="www.instagram.com" target="_blank"></a><i class="fa-brands fa-instagram"></i></a>
+        <h5>Siguenos</h5>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

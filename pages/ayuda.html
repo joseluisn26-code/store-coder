@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/font/Roboto-Regular.ttf" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shop Jose Luis</title>
+</head>
+<body>
+    <div class="grid-container">
+    <!-- header del site -->
+    <header id="header" class="header">
+        <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+        <!-- Menu de navegación principal y logo -->
+        <div class="header__logo">
+            <a href="../index.html"><i class="fas fa-shopping-cart"></i></a>
+            <h3>Jose Luis Shop</h3>
+        </div>
+
+        <nav  class="header__menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra de busqueda y icono -->
+        <div class="header__search_bar">
+            <input type="search" />
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="header__icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <!-- contenido de la pagina -->
+    <main class="main">
+        <section>
+            <h1>Ayuda</h1>
+        </section>
+        <!-- barra de navegacion- miga de pan -->
+        <section>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#preguntasFrecuentes">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="#comprar">Comprar</a>
+                </li>
+                <li>
+                    <a href="#vender">Vender</a>
+                </li>
+            </ul>
+        </section>
+        <!-- seccion preguntas frecuentes -->
+        <section id="preguntasFrecuentes">
+            <h2>Preguntas frecuentes<input type="search" placeholder="palabra clave" /><i class="fas fa-search"></i></h2>
+            <div class="productos-container-right">
+                <article class="productos-item-right">
+                    <img src="../assets/img/producto 1.jpg" alt="Producto uno" />
+                </article>
+                <article class="productos-item-right">
+                    <details open>
+                        <summary>Item one</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                    </details>
+                    <details>
+                        <summary>Item two</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                    </details>
+                    <details>
+                        <summary>Item three</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                    </details>
+                    <details>
+                        <summary>Item four</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                    </details>
+                </article>
+            </div>
+        </section>
+        <!-- seccion comprar -->
+        <section id="comprar">
+        <h2>Comprar</h2>
+        <div class="productos-container-right">
+            <article class="productos-item-right">
+                <img src="../assets/img/producto 2.jpg" alt="Producto dos" />
+            </article>
+            <article class="productos-item-right">
+                <details open>
+                    <summary>Item one</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+                <details>
+                    <summary>Item two</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+                <details>
+                    <summary>Item three</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+                <details>
+                    <summary>Item four</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+            </article>
+        </div>
+    </section>
+    <!-- seccion vender -->
+    <section id="vender">
+        <h2>Vender</h2>
+        <div class="productos-container-right">
+            <article class="productos-item-right">
+                <img src="../assets/img/producto 3.jpg" alt="Producto tres" />
+            </article>
+            <article class="productos-item-right">
+                <detail open>
+                    <summary>Item one</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </detail>
+                <details>
+                    <summary>Item two</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+                <details>
+                    <summary>Item three</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+                <details>
+                    <summary>Item four</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, impedit.</p>
+                </details>
+            </article>
+        </div>
+    </section>
+</main> 
+    
+    <!-- footer del site -->
+  <footer id="footer" class="footer">
+    <div class="footerHome__icon">
+        <h5>Copyright © Jose Luis Novoa Nieto</h5>
+        <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="www.instagram.com" target="_blank"></a><i class="fa-brands fa-instagram"></i></a>
+        <h5>Siguenos</h5>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

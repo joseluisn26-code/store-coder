@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/font/Roboto-Regular.ttf" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shop Jose Luis</title>
+  </head>
+  <body>
+    <div class="grid-container">
+    <!-- header del site -->
+    <header id="header" class="header">
+      <!-- Menu de navegación principal y logo -->
+      <div class="header__logo">
+        <a href="../index.html"><i class="fas fa-shopping-cart"></i></a>
+        <h3>Jose Luis Shop</h3>
+      </div>
+
+      <nav  class="header__menu">
+        <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
+            <li><a href="./ayuda.html">Ayuda</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+        <!-- Barra de busqueda y icono -->
+        <div class="header__search_bar">
+          <input type="search" />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="header__icon">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <!-- contenido de la pagina -->
+    <main class="main">
+        <section>
+          <div class="nosotros-container">
+            <div class="nosotros-descripcion">
+              <h1>Jose luis shop</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur sed dolorem omnis doloribus porro, quod ut labore quidem minus ex, facilis nemo fuga ipsa dolor libero architecto quaerat suscipit?
+              </p> 
+              <!-- iframe de ubicación -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2827534256303!2d-74.1193833848801!3d4.7208711965712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f852c87512e8b%3A0x4fd5368a49732d5!2sConjunto%20Residencial%20Pacabuy!5e0!3m2!1ses!2sco!4v1659372681427!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>          
+            <!-- formulario de contacto -->
+            <div class="nosotros-form">
+              <form action="">
+                <fieldset>
+                  <legend>Contacto</legend>
+                    <p for="name">Nombre
+                    <input type="name" id="name" placeholder="Enter your name" required />
+                    </p>
+                    <p for="telefono">Telefono
+                    <input type="tel" id="telefono" placeholder="Enter your telephone" required />
+                    </p>
+                    <p for="email">Email
+                    <input type="email" id="email" placeholder="Enter your email" required/>
+                    </p>  
+                    <p for="message">Mensaje
+                    <textarea id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                    </p> 
+                    <input type="checkbox" id="terminos" name="terminos" value="1">
+                    <label for="terminos">Acepto los terminos y condiciones</label>
+                    <input type="submit" value="Enviar" class="submit-btn" />
+                </fieldset>
+              </form>          
+            </div>
+          </div>
+        </section>
+    </main> 
+    
+    <!-- footer del site -->
+  <footer id="footer" class="footer">
+    <div class="footerHome__icon">
+        <h5>Copyright © Jose Luis Novoa Nieto</h5>
+        <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="www.instagram.com" target="_blank"></a><i class="fa-brands fa-instagram"></i></a>
+        <h5>Siguenos</h5>
+    </div>
+  </footer>
+</div>
+  </body>
+</html>
