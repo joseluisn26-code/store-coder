@@ -353,6 +353,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .box-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box-container > .img-item {
+    margin: 6px;
 }
 .img-item {
     width: 20%;
