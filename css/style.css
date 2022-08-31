@@ -571,6 +571,17 @@ summary {
 details[open] {
     background: #36AE7C; /* color de fondo cuando está desplegado */
 }
+.bg-container-accordion {
+    padding: 10px;
+    color: white;
+    max-width: 1000px;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(13, 141, 141);
+    border: none;
+}
+  
+
 /* nosotros container */
 .nosotros-container {
     display: flex;
