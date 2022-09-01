@@ -205,8 +205,8 @@ ul.breadcrumb li a:hover {
 }
 .productos-item img,
 .productos-item-right img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: auto;
     margin: 10px;
     padding: 10px;
 }
@@ -627,6 +627,11 @@ details[open] {
     border-radius: 50px;
     text-align: center;
     color: #FFBD35;    
+}
+.fa-cc-mastercard:before,
+.fa-cc-visa:before,
+.fa-paypal:before {
+    color: rgb(13, 141, 141);  
 }
 
 /* nosotros container */
