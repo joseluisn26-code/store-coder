@@ -696,4 +696,7 @@ details[open] {
         text-decoration: none;
         color: white;
     }
+    .nosotros-container {
+        flex-direction: column;
+    }
 }
