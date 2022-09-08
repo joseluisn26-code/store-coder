@@ -650,7 +650,7 @@ details[open] {
     width: 400px;
     height: 100%;
 }
-@media (max-width: 858px){
+@media (max-width: 768px){
     .checkbtn{
         display: block;
     }
@@ -660,7 +660,7 @@ details[open] {
         height: 100vh;
         background: rgb(13, 141, 141);
         top: 80px;
-        left: -100%;
+        left: 100%;
         text-align: center;
         transition: all .5s;
     }
@@ -668,6 +668,7 @@ details[open] {
         display: inline;
         margin: 50px 0;
         line-height: 30px;
+        align-items: flex-start;
     }
     nav ul li a{
         font-size: 20px;
@@ -675,8 +676,18 @@ details[open] {
     #check:checked ~ ul{
         left:0;
     }   
+  
+#header.header {
+        justify-content: flex-start;
+    }
     #header .header__logo {
-        padding: 0px;
+        padding: 16px;
+    }
+    #header .header__menu ul , #header .header__search_bar, #header .header__icon{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: flex-start;
     }
     #header .header__menu ul li a,
     #header .header__icon,
