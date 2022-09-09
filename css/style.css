@@ -699,4 +699,41 @@ details[open] {
     .nosotros-container {
         flex-direction: column;
     }
+    #categoria, #precio, #envio {
+        width: 100px;
+    }
+    .select-container {
+        justify-content: flex-end;
+    }
+    .fa-5x {
+        font-size:3em
+    }
+    .productos-descripcion p{
+        width: auto;
+    }
+    .productos-container, .productos-container-right {
+        flex-direction: column;
+    }
+    .productos-item img, .productos-item-right img {
+        width: 650px;
+    }
+    .right {
+        float: inherit;
+    }
+    .recomendados {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        gap: 20px;
+    }
+    .recomendados-container {
+        right: 20px;
+    }
+    .buscados-container {
+        justify-content:center;
+        gap: 2px;
+    }
+    .buscados-container img {
+        width: 110px;
+    }
 }
