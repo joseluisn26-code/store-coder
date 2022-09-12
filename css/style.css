@@ -758,6 +758,12 @@ details[open] {
         width: 700px;
         
     }
+    .box-boletines img {
+        width: 103px;
+    }
+    .box-boletines p {
+        font-size: 0.4rem;
+    }
     .box-container, 
     .btn-container,
     .container {
@@ -768,7 +774,7 @@ details[open] {
     }
     .img-container {
         grid-template-columns: repeat(3, 230px);
-        grid-template-rows: repeat(2, 530px);
+        grid-template-rows: repeat(2, 400px);
     }
     .img-container img {
         width: 200px;
