@@ -371,6 +371,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .img-item img {
     width:100%;
 }
+img, svg {
+    vertical-align: middle;
+    width: 100%;
+}
 /* productos recomendados */
 .recomendados {
     display: flex;
@@ -651,6 +655,9 @@ details[open] {
     height: 100%;
 }
 @media (max-width: 768px){
+    h1,h2,h3,h4,h5,h6,p {
+        font-size: 0.8rem;
+    }
     .checkbtn{
         display: block;
     }
@@ -746,5 +753,37 @@ details[open] {
 
     .retiro-fisico-container {
         width: 700px;
+    }
+    .box-boletines {
+        width: 700px;
+        
+    }
+    .box-container, 
+    .btn-container,
+    .container {
+        flex-direction: column;
+    }
+    .img-item {
+        width: 50%;
+    }
+    .img-container {
+        grid-template-columns: repeat(3, 230px);
+        grid-template-rows: repeat(2, 530px);
+    }
+    .img-container img {
+        width: 200px;
+    }
+    .circulo {
+        width: 8rem;
+        height: 9rem;
+    }
+    .detalle {
+        width: 180px;
+        height: 300px;
+    }
+    .circulo > p, .detalle > p {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 }
