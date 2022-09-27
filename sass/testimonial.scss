@@ -2,6 +2,13 @@ $font-principal: 'Roboto', sans-serif;
 $font-principal: 'Roboto Mono', monospace;
 $color-primario: #FFBD35;
 $color-secundario:rgb(13, 141, 141);
+$width: 100%;
+$height: 90px;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+  }
 
 body {
     background-color: $color-primario;
@@ -11,7 +18,6 @@ body {
 }
 
 h1 {
-    // color: $color-secundario;
     text-align: center;
     margin: 20px;
 }
@@ -23,10 +29,9 @@ header {
     justify-content: space-between;
     font-size: 18px;
     align-items: center;
-    height: 90px;
-    width: 100%;
     position: fixed;
     z-index: 100;
+    @include sizes($width, $height);
 
     .header__logo {
         padding: 10px 10px;
@@ -96,8 +101,7 @@ footer {
         align-items: center;
         border: 5px;
         padding: 10px;
-        height: 90px;
-        width: 100%;
+        @include sizes($width, 90px);
         display: flex;
         color: white;
         i {
@@ -121,8 +125,7 @@ main {
             &:after {
                 background: $color-secundario;
                 display: block;
-                height: 3px;
-                width: 170px;
+                @include sizes(3px, 170px);
                 margin: 20px auto 5px;
             }
         }
@@ -147,8 +150,7 @@ main {
                         border: 10px solid white;
                     }
                     .user {
-                        width: 120px;
-                        height: 120px;
+                        @include sizes(120px, 120px);
                         border-radius: 50%;
                     }
                     h3 {
@@ -193,15 +195,25 @@ main {
         .header__logo {
             padding: 16px;
         }
-        .header__icon,
-        .header__search_bar,
+        %header {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        ul {
+            @extend %header;
+        }
+        .header__icon{
+            @extend %header;
+            flex-direction: row;
+        }
+        .header__search_bar{
+            @extend %header;
+            flex-direction: row;
+        }
         .header__menu {
-            ul {
-                display: flex;
-                list-style: none;
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            @extend %header;            
         }
         .checkbtn{
             display: block;
@@ -232,5 +244,20 @@ main {
                 }
             }
         }
+    }
+    .footerHome__text, .footerHome__icon {
+        bottom: -700px;
+        position: absolute;
+    }
+}
+@media (max-width: 425px){
+    .header__icon{
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+@media (max-width: 1024px){
+    h3 {
+        font-size: calc(1.3rem + -0.5vw);
     }
 }

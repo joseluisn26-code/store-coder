@@ -17,10 +17,10 @@ header {
   justify-content: space-between;
   font-size: 18px;
   align-items: center;
-  height: 90px;
-  width: 100%;
   position: fixed;
   z-index: 100;
+  height: 90px;
+  width: 100%;
 }
 header .header__logo {
   padding: 10px 10px;
@@ -109,8 +109,8 @@ main .testimonials h1 {
 main .testimonials h1:after {
   background: rgb(13, 141, 141);
   display: block;
-  height: 3px;
-  width: 170px;
+  height: 170px;
+  width: 3px;
   margin: 20px auto 5px;
 }
 main .testimonials p {
@@ -137,8 +137,8 @@ main .testimonials .row .col-md-4 .profile img {
   border: 10px solid white;
 }
 main .testimonials .row .col-md-4 .profile .user {
-  width: 120px;
   height: 120px;
+  width: 120px;
   border-radius: 50%;
 }
 main .testimonials .row .col-md-4 .profile h3 {
@@ -179,13 +179,17 @@ main .testimonials .row .col-md-4 .profile blockquote:after {
   header .header__logo {
     padding: 16px;
   }
-  header .header__icon ul,
-header .header__search_bar ul,
-header .header__menu ul {
+  header .header__menu, header .header__search_bar, header .header__icon, header ul {
     display: flex;
     list-style: none;
     flex-direction: column;
     align-items: flex-start;
+  }
+  header .header__icon {
+    flex-direction: row;
+  }
+  header .header__search_bar {
+    flex-direction: row;
   }
   header .checkbtn {
     display: block;
@@ -211,5 +215,20 @@ header .header__menu ul {
   }
   header nav ul li a {
     font-size: 20px;
+  }
+  .footerHome__text, .footerHome__icon {
+    bottom: -700px;
+    position: absolute;
+  }
+}
+@media (max-width: 425px) {
+  .header__icon {
+    flex-direction: column;
+    padding: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  h3 {
+    font-size: calc(1.3rem - 0.5vw);
   }
 }/*# sourceMappingURL=testimonial.css.map */
