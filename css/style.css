@@ -766,7 +766,7 @@ details[open] {
     }
 
     .box-boletines, .retiro-fisico-container {
-        width: 45.75rem;
+        width: 40rem;
         height: 1000px;
         flex-wrap: wrap;
         justify-content: center;
@@ -783,7 +783,7 @@ details[open] {
         flex-direction: column;
     }
     .img-item {
-        width: 90%;
+        width: 85%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
