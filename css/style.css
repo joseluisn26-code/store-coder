@@ -768,7 +768,13 @@ details[open] {
         max-width: 43.75rem;
     }
 
-    .box-boletines, .retiro-fisico-container {
+    .box-boletines {
+        width: 40rem;
+        height: 750px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .retiro-fisico-container {
         width: 40rem;
         height: 314px;
         flex-wrap: wrap;
