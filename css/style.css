@@ -343,7 +343,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 .box-button {
     display: flex;
-    border-top: 1px solid #ededed;
+    /* border-top: 1px solid #ededed; */
     padding: 16px 30px;
 }
 /* productos más buscados */
