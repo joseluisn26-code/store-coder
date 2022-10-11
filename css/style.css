@@ -727,6 +727,9 @@ details[open] {
     button, select {
         width: 97%;
     }
+    .text-item > ul {
+        display: none;
+    }
     .productos-descripcion p{
         width: auto;
     }
@@ -927,14 +930,14 @@ details[open] {
         gap: 0.125rem;
     }
     .buscados-container img {
-        width: 3.875rem;
+        width: 2.875rem;
     }
     .bg-container-accordion {
         max-width: 43.75rem;
     }
 
     .box-boletines, .retiro-fisico-container {
-        width: 24.75rem;
+        width: 22.75rem;
         flex-wrap: wrap;
         align-content: space-around;
     }
@@ -976,12 +979,12 @@ details[open] {
         height: 9rem;
     }
     .detalle {
-        width: 7.6rem;
+        width: 7.9rem;
         height: 18.75rem;
     }
     .circulo > p, .detalle > p {
         color: white;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-weight: bold;
     }
     .border-style {
@@ -999,6 +1002,6 @@ details[open] {
     .div3 > p,
     .div4 > p,
     .div5  > p{
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
