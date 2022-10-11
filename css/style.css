@@ -270,7 +270,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0.625rem;
+    grid-column-gap: 1.1rem;
     grid-row-gap: 0.625rem;
     align-items: start;
     justify-items: center;
@@ -762,7 +762,7 @@ details[open] {
         gap: 0.125rem;
     }
     .buscados-container img {
-        width: 6.875rem;
+        width: 6.475rem;
     }
     .bg-container-accordion {
         max-width: 43.75rem;
@@ -794,17 +794,17 @@ details[open] {
     }
     .img-container {
         grid-template-columns: repeat(3, 14rem);
-        grid-template-rows: repeat(2, 36rem);
+        grid-template-rows: repeat(2, 25rem);
     }
     .img-container img {
         width: 10.5rem;
     }
     .circulo {
-        width: 8rem;
+        width: 11rem;
         height: 9rem;
     }
     .detalle {
-        width: 11.25rem;
+        width: 13.25rem;
         height: 18.75rem;
     }
     .circulo > p, .detalle > p {
